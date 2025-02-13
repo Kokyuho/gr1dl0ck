@@ -14,7 +14,7 @@ def xor_buffers(buf1: bytes, buf2: bytes) -> bytes:
     """
     if len(buf1) != len(buf2):
         raise ValueError("Both buffers must have equal length.")
-    
+
     return bytes(b1 ^ b2 for b1, b2 in zip(buf1, buf2))
 
 
